@@ -1,0 +1,36 @@
+body{
+    background-color: rgba(51, 116, 38, 0.72);
+    background-image: linear-gradient(to bottom right, blue, green);
+}
+h1,h2{
+    color: green;
+    font-family: "Lucida Console";
+}
+p{
+    color:red;
+}
+p.negrita{
+    color: white;
+    font-weight: bold;
+}
+
+.btnEnviar{
+    color: lightseagreen;
+    font-family: "Arial Black";
+    background-color: white;
+    width: 120px;
+    height: 85px;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 1px;
+}
+.btnEnviar:hover{ 
+    color:red;
+    background-color: black;
+    cursor: progress;
+}
+.btnEnviar:active{
+    color:blueviolet;
+    background-color: goldenrod;
+    cursor: crosshair;
+}
