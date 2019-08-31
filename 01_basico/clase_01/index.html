@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <fieldset>
+        <legend>
+            Sumar numeros
+        </legend>
+        <section>
+            <input type="number" name="numeroUno" id="numeroUno"> +
+            <input type="text" name="numeroDos" id="numeroDos">
+            <input type="button" value="Sumar" id="btnSumar">
+            <input type="button" value="Sumar y Guardar" id="btnSumarYGuardar">
+            <hr>
+        </section>
+        <section>
+            <label for="resultado">Resultado</label>
+            <input type="text" name="resultado" id="resultado">
+            <hr>
+        </section>
+        <section>
+            <h2>Historial de Sumas</h2>
+            <table border="1">
+                <thead>
+                    <th>Numero 1</th>
+                    <th>Numero 2</th>
+                    <th>Resultado</th>
+                </thead>
+                <tbody id="tabla">
+                    
+                </tbody>
+            </table>
+        </section>
+    </fieldset>
+</body>
+
+</html>

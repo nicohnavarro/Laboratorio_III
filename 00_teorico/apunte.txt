@@ -1,0 +1,10 @@
+----------------------------------------------------
+30/08/19
+
+Las Funciones son punteros 
+La variable es un puntero a funcion
+window.onload = recibe un puntero a funcion
+
+Tener mas de un manejador con el addEventListener
+dos parametros el string -> nombre del evento, y el puntero a funcion
+
