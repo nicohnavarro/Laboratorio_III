@@ -37,5 +37,6 @@ function Agregar() {
 function borrar(e){
     e.preventDefault();
     console.log(e.target.parentNode.parentNode);
+    if(confirm("Desea borrar?"));
     e.target.parentNode.parentNode.innerHTML="";
 }

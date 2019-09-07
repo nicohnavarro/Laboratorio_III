@@ -8,3 +8,47 @@ window.onload = recibe un puntero a funcion
 Tener mas de un manejador con el addEventListener
 dos parametros el string -> nombre del evento, y el puntero a funcion
 
+----------------------------------------------------
+06/09/19
+
+Width 50% para la mitad de la pantalla
+Los div se pone uno abajo de otro
+
+Posicionamiento:
+box-sizing: border-box;
+Componentes de caja -> position: static; por defecto
+
+position: relative + relative -> uno arriba de otro;
+
+padre: relative -> hijo : absolute = no se puede ir de los bordes
+
+position: fixed ;
+bottom:0;
+right: 0;
+
+display: flex;
+flex-direction: row -> valor por defecto
+column
+reverse-row
+reverse-column
+
+justify-content: flex-start; por defecto
+flex-end
+center
+space-between
+space-around
+
+aling-items: strech; por defecto
+
+$en row el justify-content eje Y; aling-items eje X;
+$en colum el justify-content eje X; aling-items eje Y;
+
+flex-wrap: wrap; por defecto nowrap;
+
+flex-grow -> va contra los hijos 
+el espacio libre se divide y se reparte a los hijos la cantidad de numeros
+
+
+
+
+
