@@ -48,7 +48,7 @@ flex-wrap: wrap; por defecto nowrap;
 flex-grow -> va contra los hijos 
 el espacio libre se divide y se reparte a los hijos la cantidad de numeros
 
-
-
+----------------------------------------------------
+13/09/19
 
 

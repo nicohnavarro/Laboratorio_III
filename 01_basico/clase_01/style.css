@@ -1,0 +1,32 @@
+body{
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color: chocolate;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+legend{
+    color:blue;
+}
+.button{
+    background-color: black;
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    color: chartreuse;
+}
+.button:hover{
+    color: red;
+    background-color: white;
+}
+table{
+    border: #7b4397;
+}
+td{
+    margin: 5px;
+    padding: 5px;
+}
