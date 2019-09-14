@@ -10,3 +10,18 @@
 ul{
     text-align: right;
 }
+
+header{
+    background-image: url("wsadsdsa");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+body{
+    margin: 0px;
+}
+
+.row-header{
+    padding: 1rem 0 3rem 0;
+}
