@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 03</title>
+    <script>
+        function cargar() {
+            var boton = document.getElementById("log");
+            boton.addEventListener("click", loggear);
+        }
+
+        //window.onload=a;
+        window.addEventListener("load", cargar);
+
+        function loggear() {
+            document.getElementById("loading").hidden=false;
+            var http = new XMLHttpRequest();
+            http.onreadystatechange = function () {
+                console.log("Llego la peticion", http.readyState);
+                console.log(http.status);
+                if (http.readyState === 4 && http.status === 200 && http.responseText === "true") {
+                    console.log("Tenemos la respuesta");
+                    console.log(http.response);
+                    alert("Ingreso con exito");
+                    document.getElementById("loading").hidden=true;
+                }
+                else if (http.readyState === 4 && http.status === 200 && http.responseText === "false") {
+                    alert("Error de loggeo");
+                }
+            }
+
+            // var consulta = "http://localhost:3000/loginUsuario?";
+            // consulta += "usr=";
+            // consulta += document.getElementById("usuario").value;
+            // consulta += "&pass=";
+            // consulta += document.getElementById("password").value;
+            // http.open("GET", consulta); 
+            // http.send();
+            http.open("POST", "http://localhost:3000/loginUsuario");
+            http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            http.send("usr=" + document.getElementById("usuario").value + "&pass=" + document.getElementById("password").value);
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <h1>AJAX</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Login
+            </legend>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
+
+            <label for="txtPassword">Contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+
+            <input type="button" value="Log" id="log">
+            <input type="reset" value="Reset">
+        </fieldset>
+        <img src="orcas.gif" alt="" hidden="true" id="loading">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+line height
+
+Viernes 20/09
+AJAX Asincronous Js And XML
+esperar que responda la funcion para actuar
+-> Actualizar partes de la pagina
+Le mandan a hacer algo y se crea un hilo aparte
+
+Llamadas a servidores y esperar la respuesta
+Desventajas los navegadores
+PASOS 1: objeto xmlHttpRequest variable funcion open()
+open.("Metodo", "URL", boolean Async)
+Metodo -> GET,POST
+URL -> direccion donde le vamos a pegar .php o localhost
+true;
+
+xhttp.send(); // Si es GET
+xhttp.open("GET","ajax_test.php",true);
+xhttp.send();
+
+xhttp.send("string"); // Si es POST
+http.onreadystatechange -> funcion anonima sin referencia
+No sabemos cuando va a llegar la respuesta porque es asincrona
+Que respuesta fue??
+4 respuestas 
+200 todo bien
+500 error de servidor
+404 no encontro lo que queria
+http://localhost:3000/login
+http://localhost:3000/loginusuario
+http://localhost:3000/loginusuario?usr=usuario&pass=1234
+
+11 de OCTUBRE 1er PARCIAL
+
+Setear el content type sino no llega ninguna peticion
