@@ -8,6 +8,8 @@ function Cargar() {
 function Agregar() {
     var name = document.getElementById("name");
     var surname = document.getElementById("surname");
+    var phone = document.getElementById("phone");
+    var date = document.getElementById("date");
 
     if (name.value == "" || surname.value == "") {
         name.className += "isError";
@@ -22,6 +24,12 @@ function Agregar() {
             texto += "</td>";
             texto += "<td>";
             texto += surname.value;
+            texto += "</td>";
+            texto += "<td>";
+            texto += phone.value;
+            texto += "</td>";
+            texto += "<td>";
+            texto += date.value;
             texto += "</td>";
             texto += "<td>";
             texto += "<a href='#'' onclick='borrar(event)'>Borrar</a>";
