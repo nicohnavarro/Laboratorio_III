@@ -1,0 +1,31 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    margin: 1vh;
+    padding:2vh;
+    background-color:oldlace;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    border: solid 1px black;
+}
+img{
+    border-radius: 8rem;
+    margin: 1vh;
+    padding: 1vh;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.other{
+    display: block;
+    text-align: center;
+    align-items: flex-start;
+}

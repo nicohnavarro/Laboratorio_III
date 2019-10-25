@@ -1,0 +1,298 @@
+.header{
+    color: white;
+    display: flex;
+    background-image: url("./img/header.jpg");
+    background-position: cente center;
+    background-size: cover;
+    /* 100% de la pantalla visible */
+    height: 100vh;
+    position: relative;
+}
+body
+{
+    margin: 0px;
+}
+.titulo{
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.li{
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 20%;
+    padding-top: 20px;
+}
+
+li{
+    list-style-type: none;
+}
+.liHeader{
+    font-size: 10px;
+    font-family: Arial;
+    padding: 10px;
+}
+
+.container{
+    background-color: White;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.imgFoot{
+    font-size: 17px;
+    position: absolute;
+    bottom: 0;
+    /* padding-left: 30%; */
+    margin-left: 14%;
+    padding-bottom: 30px;
+    line-height: 35px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family:Lato;
+}
+
+.sobreNosotros{
+    display:flex;
+    width: 70%;
+    margin:auto;
+}
+
+.tituloBody{
+    font-size: 20px;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.itemNosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: top; 
+    display:flex;
+
+}
+
+.itemImg{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloSobre{
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.botonesPie
+{
+    margin-right: 10px;
+}
+.descSobre{
+    flex-direction: column;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 9px; 
+    width: 60%;
+    line-height: 17px;
+}
+
+.ejemplosCasas{
+    display:flex;
+    display: flex;
+    margin:auto;
+    justify-content: center;
+}
+
+.casaEjemplo{
+    width: 20%;
+    background-color: rgb(236, 236, 236) ;
+    border: 1px grey solid;
+    padding-left: 0px;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.featuresCasa{
+    display:flex;
+    justify-content: space-around;
+}
+
+.fotoCasa{
+    flex-direction: row;
+    width:100%;
+    height:auto;
+}
+
+.descCasa{
+    flex-direction: column;
+    font-size: 9px; 
+    width: 60%;
+    line-height: 17px;
+}
+
+.cantFeat{
+    font-size: 12px;
+}
+
+.fotoFeat{
+    max-width: 23px;
+    margin-left: 5px;
+}
+
+
+.verPropiedad{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: rgb(219, 154, 33);
+    width: 93%;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 7px;
+}
+
+.casas{
+    width: 100%;
+
+}
+
+.verTodas{
+    background-color: rgb(61, 187, 61);
+    font-size: 10px;
+    font-weight: bold;
+    color:white;
+    width: 10%;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-left: 70%;
+}
+
+
+
+.precio{
+    font-size: 9px;
+    color: rgb(57, 177, 57);
+    font-weight: bold;
+}
+
+.encuentra{
+    margin-top: 30px;
+    background-image: url("./img/encuentra.jpg");
+    background-size: 100%; 
+    width:100%;
+    height:200px;
+    color: white;
+    padding-left: 15%;
+    padding-top: 5%;
+    line-height: 35px;
+}
+
+.encuentraTitulo{
+    font-size:19px;
+}
+
+.encuentraDesc{
+    font-size:12px;
+}
+
+.encuentraBoton{
+    background-color: rgb(219, 154, 33);
+    font-size: 10px;
+    font-weight: bold;
+    color:white;
+    width: 10%;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.finPag{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fotoBlog{
+    max-width: 160px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.comentariosFin{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.bloqueBlog{
+    display:flex;
+    text-align: left;
+    flex-direction: row;
+}
+
+.blogTitle{
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.blog{
+    flex-direction: column;
+}
+
+.autorBlog{
+    margin-left: 20px;
+    font-size: 10px;
+}
+.blogDesc{
+    margin: 20px;
+    font-size: 10px;
+    width: 50%;
+    line-height: 20px;
+}
+
+.piePagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(44, 44, 44);
+    color:white;
+    font-size: 10px;
+    height: 60px;
+    align-items: center;
+}
+
+
+.quote{
+    font-size: 30px;
+}
+.divisor{
+    height: 5px;
+    background-color: green;
+    width:30%;
+    margin-left: 20px;
+
+}
+.reseñas{
+    background-color: rgb(40, 161, 40);
+    border-radius: 20px;
+    width: 40%;
+    color: white;
+    padding: 10px;
+}
+
+.personaTest{
+
+}

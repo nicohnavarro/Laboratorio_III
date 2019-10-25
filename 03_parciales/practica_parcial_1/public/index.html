@@ -1,0 +1,94 @@
+<!-- 
+// "titulo": "Casa de Lujo en la montaña",
+// "transaccion": "Venta",
+// "descripcion": "Casa en la montaña con excelente vista, acabados de lujo a un precio irresistible",
+// "precio": "$4,500,0000",
+// "num_wc": "3",
+// "num_estacionamiento": 1,
+// "num_dormitorio": 5,
+// "active": "true" -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/xhr.js"></script>
+    <script src="./js/Anuncios.js"></script>
+    <script src="./js/tableHelper.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <header class="site-header inicio"></header> -->
+
+    <form>
+        <fieldset style="width: 500px">
+            <legend>Inmuebles</legend>
+            <div hidden id="divId">
+                <tr>
+                    <td><label for="txtid" ></label>Id: </td>
+                    <td><input type="number" id="txtid" name="id" value='-1' disabled></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label for="txtTitulo"></label>Titulo: </td>
+                    <td><input type="text" id="txtTitulo" name="Titulo" required value='Casa'></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label for="txtTransaccion"></label>Transaccion: </td>
+                    <td><input type="text" id="txtTransaccion" name="Transaccion" required value='compra'></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label for="txtDescripcion"></label>Descripcion: </td>
+                    <td><input type="text" id="txtDescripcion" name="Descripcion" required value='Muy linda'></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label for="txtPrecio"></label>Precio: </td>
+                    <td><input type="text" id="txtPrecio" name="Precio" required value='3000000'></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label for="num_wc"></label>Numero de baños: </td>
+                    <td><input type="number" id="num_wc" name="wc" required value='2'></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label for="estacionamiento"></label>Estacionamientos: </td>
+                    <td><input type="number" id="estacionamiento" name="estacionamientos" required value='1'></td>
+                </tr>
+            </div>
+            <div>
+
+                <tr>
+                    <td><label for="num_dormitorio"></label>Numero de dormitorios: </td>
+                    <td><input type="number" id="num_dormitorio" name="dormitorios" required value='4'></td>
+                </tr>
+            </div>
+            <div> <input type="submit" name="alta" id="btnAlta" value="Alta" class="boton boton-verde">
+                <input type="button" name="Modificar" id="btnModificar" value="Modificar" class="boton boton-verde oculto">
+                <input type="button" name="Eliminar" id="btnEliminar" value="Eliminar" class="boton boton-amarillo oculto">
+                <input type="button" name="Cancelar" id="btnCancelar" value="Cancelar" class="boton boton-rojo oculto">
+            </div>
+        </fieldset>
+    </form>
+    <div id="divTabla">
+
+
+    </div>
+</body>
+
+</html>
