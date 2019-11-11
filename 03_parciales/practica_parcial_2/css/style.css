@@ -1,32 +1,50 @@
-@import url('normalize.css');
-
-.container{
-    width: 100%;
-    height: 100%;
+body{
+    background-color: black;
 }
-
-.card{
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 5vh;
-    text-align: center;
+.container{
+    background-color:grey;
     margin: 10px;
+    padding:10px;
+    display:flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow:  row wrap;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.card1{
+    /* flex-grow: 1; */
+}
+.card{
+    margin:1px;
+    border:1px solid black;
+    width: 30%;
+    /* margin: 1rem; */
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
 }
 .userImg{
-    float: left;
     width: 50%;
-    height: 100%;
+    border:1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .userImg img{
-    width: 30%;
-    height: 30%;
+    width:30%;
+    height: auto;
+    border: 1px solid yellow;
 }
-
 .userInfo{
-    float: right;
     width: 50%;
-    height: 100%;
-    text-align: center;
-    justify-content: space-between;
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
 }
