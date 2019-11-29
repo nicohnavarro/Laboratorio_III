@@ -6,9 +6,8 @@ function mostrarPersonas(){
       cargarDatos(data);
     });
 }
-function red(){
 
-}
+
 function cargarDatos(data){
   var DatosJson = data;
   console.log(DatosJson);
