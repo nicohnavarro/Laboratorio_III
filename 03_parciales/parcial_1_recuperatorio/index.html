@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Recuperatorio</title>
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="./js/funcionesIndex.js"></script>
+        
+        <link rel="stylesheet" href="./css/hojaIndex.css">
+        </head>
+        <body id="body">
+            <div id="form" class="centrar">
+                <form id="myForm">
+                    <button class="cerrar">x</button><br>
+                    <input type="text" class="txt" id="txtNom">
+                    <input type="text" class="txt" id="txtApe"><br><br>
+                    <select name="provincia" id="pro" onchange="cargarL(event)"></select>
+                    <select name="localidad" id="loc"></select><br><br>
+                    <input type="radio" value="Female" class="margen" name="radio" id="fem">femenino
+                    <input type="radio" value="Male" class="margen" name="radio" id="mas">masculino <br><br>
+                    
+                    
+                    
+                    <input type="button" value="modificar" class="btn" id="btnM"><br>
+                    <label class="oculto" id="lblId"></label>
+                </form>
+
+                
+
+            </div>
+            <div class="spinner"></div>
+        </body>
+    </html>
