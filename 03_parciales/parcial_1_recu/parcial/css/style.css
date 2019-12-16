@@ -1,0 +1,136 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+table {
+    border: 2px solid greenyellow;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 2px solid hotpink;
+}
+
+td {
+    border: 2px solid yellow;
+}
+
+.seleccionado {
+    background-color: rgb(97, 97, 105);
+    color: white;
+}
+
+.overlay {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(107, 110, 104, 0.7);
+    transition: opacity 3000ms;
+    opacity: 1;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.abrirpop {
+    visibility: visible;
+}
+
+
+/* 
+overlay:target {
+    visibility: visible;
+    opacity: 1;
+} */
+
+#popupBody {
+    width: 30%;
+    height: auto;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    margin: 5%;
+}
+
+.popupContent {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    height: auto;
+}
+
+.close {
+    margin: 1em;
+    float: right;
+    font-weight: bold;
+    background-color: lightgoldenrodyellow;
+    border-radius: 5px;
+    border: 1px solid red;
+    color: white;
+    background-color: red;
+}
+
+.close:hover {
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+
+#name {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#cuatrimestre {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#fechaFinal {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    margin: 10px;
+}
+
+.btn-modificar {
+    background-color: green;
+}
+
+.btn-eliminar {
+    background-color: red;
+}

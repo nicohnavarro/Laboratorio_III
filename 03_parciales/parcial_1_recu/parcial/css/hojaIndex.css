@@ -1,0 +1,106 @@
+/*input[type=button]{
+se puede hacer así para agregar un estilo a todos los objetos de este tipo
+en doubleclick=abrir(event). habìa que pasar el event
+para recuperar variables despuès usar
+e.target.children[1].children[0].children[2].innerHtml;si no es innerhtml es value
+var padre=e.target.parentNode;
+padre.removeChild(e.target);
+}**/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+table{
+  border-radius: 1px, black;
+}
+
+#body{
+    /*height: 60rem;
+    width: 100%;
+    position: absolute;
+    border-color: aqua;
+    flex-direction: row;
+    display: inline-table;*/
+
+    /*con estas dos funciones se alinea*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100vh;
+
+    /*background-image: url("C:/Users/Nahuel/Desktop/libreta-de-bolsillo-classic.jpg");*/
+    background-size: 70%;
+    background-position: top;
+    background-color: silver;
+    background-repeat: no-repeat;
+
+}
+
+/*lo editè así para poder verlo con consola, si no llego a centrarlo no queda centrado por eso*/
+.centrar{
+    display:flex;
+    margin-left: 20rem;
+    margin-top: 20rem;
+    position: absolute;
+    height: 40rem;
+    background-color: grey;
+    border-radius: 1rem;
+    border: 0.5rem black solid;
+    width: 50rem;
+    font-size: 2rem;
+}
+
+input[type=button]{
+    border-radius: 0.8rem;
+    background-color: aquamarine;
+    font: bold;
+    margin-left: 5rem;
+
+}
+
+input[type=text]{
+    margin-top: 3rem;
+    margin-left: 9rem;
+
+}
+input[type=radio]{
+
+    margin-left: 6rem;
+
+}
+
+.cerrar{
+    background-color: red;
+    size: 1rem;
+    margin: 1rem;
+}
+
+.oculto{
+    visibility: hidden;
+    font-size: 0.01rem;
+}
+
+.spinner{
+    position: absolute;
+
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+
+    background-image: url("../img/spinner.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+#btnE{
+  background-color: red;
+}
+
+#btnM{
+  background-color:green;
+}

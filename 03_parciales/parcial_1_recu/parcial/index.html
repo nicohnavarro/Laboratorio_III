@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recuperatorio</title>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id='popup' class="overlay">
+        <div id="popupBody">
+            <button class='close' id='close'>X</button><br>
+            <h2>Modificar Materia</h2>
+            <div class="popupContent">
+                <form id='myform'>
+                    <label for="name">Nombre materia:</label><br>
+                    <input type="text" name="name" id="name">
+                    <label for="cuatrimestre">Cuatrimestre</label>
+                    <select name="cuatrimestre" id="cuatrimestre" disabled>
+            <option value="1">Primero</option>
+            <option value="2">Segundo</option>
+            <option value="3">Tercero</option>
+            <option value="4">Cuarto</option>
+          </select><br> Turno:
+                    <input type="radio" name="gender" id='tm' value="Mañana" checked='false'> Mañana
+                    <input type="radio" name="gender" id='tn' value="Noche" checked='false'> Noche <br> Fecha Final: <br>
+                    <input type="date" name="fechaFinal" id="fechaFinal"><br>
+                    <input type="button" value="Modificar" class="btn btn-modificar" id="btnM">
+                    <input type="button" value="Eliminar" class="btn btn-eliminar" id="btnE">
+                    <label class="hide" id="lblId"></label>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contenedor" class="contenedor">
+    </div>
+
+</body>
+
+</html>
