@@ -1,0 +1,40 @@
+.centrar{
+    
+    margin-top: 8rem;
+    position: absolute;
+    height: 30rem;
+    background-color: pink;
+    border-radius: 1rem;
+    border: 0.5rem black solid;
+    width: 40rem;
+    font-size: 2rem;
+    
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction:column;
+    display: none;
+}
+
+#autoDiv{
+    display: block;
+    }
+    
+#camionetaDiv{
+        display: none;
+}
+
+.btn{
+    background-color: cyan;
+    border-radius: 0.5rem;
+    width: 5rem;
+    font: bold;
+    margin-right: 5rem;
+}
+
+button{
+    margin: 1rem;
+}
