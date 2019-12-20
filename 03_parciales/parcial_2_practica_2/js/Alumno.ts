@@ -1,21 +1,31 @@
-namespace personas
-{
+namespace Parcial {
     export class Alumno extends Persona{
+        private legajo:number;
+        private promedio:number;
 
-        private legajo:string;
-
-        constructor(nombre:string, apellido:string, legajo:string)
+        constructor(nombre:string,apellido:string,legajo:number)
         {
-            super(nombre, apellido);
-
-            this.legajo = legajo;
+            super(nombre,apellido);
+            this.legajo=legajo;
+            
         }
 
-        getLegajo():string{
+        getLegajo():number{
             return this.legajo;
         }
 
+        setPromedio(promedio:number):boolean{
+            if(promedio>1){
+                this.promedio=promedio;
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
 
-
+        getPromedio():number{
+            return this.promedio;
+        }
     }
 }

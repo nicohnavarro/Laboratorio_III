@@ -1,143 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/Alumno.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-    <title>Segundo Parcial</title>
-</head>
-
-<body>
+    <html>
+    <head>        
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="./vehiculo.js"></script>
+        <script src="./auto.js"></script>
+        <script src="./camioneta.js"></script>
+        <script src="./funciones.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <title>Luis Nahuel Fernandez 2P</title>
+    </head>
+    <body>
+        
     <div class="container">
-        <h1 class='text-center'>ABM Personas</h1>
-        <div class="row justify-content-center my-4" style='border:1px solid black;'>
-            <div class="input-group mb-3">
-                <label class='label col-12' for="txtId">ID</label>
-                <input id='txtId' type="text" class="form-control" placeholder="ID" readonly>
-            </div>
-
-            <div class="input-group mb-3">
-                <label class='label col-12' for="txtId">Nombre</label>
-                <input id='txtNombre' type="text" class="form-control" placeholder="Nombre">
-            </div>
-
-            <div class="input-group mb-3">
-                <label class='label col-12' for="txtId">Apellido</label>
-                <input id='txtApellido' type="text" class="form-control" placeholder="Apellido">
-            </div>
-
-            <div class="input-group mb-3">
-                <label class='label col-12' for="txtId">Edad</label>
-                <input id='txtEdad' type="number" class="form-control" placeholder="Edad">
-            </div>
+        <div class="row justify-content-left">
+                <button onclick="segundoParcial.Agregar()">Alta</button>
+                <button onclick="segundoParcial.CargarTabla()">Tabla</button>
+                <button onclick="segundoParcial.Calcular()">Calcular</button>
+                Filtrar por:<input type="text" id="filtro" class="col-2 align-self-start">
+                    
         </div>
-
-        <div class="container-fluid">
-            <div class='col-12 justify-content-center' style="border:1px solid black;">
-                <input type="button" id='btnGuardar' value="Guardar" class='btn btn-success'>
-                <input type="button" value="Limpiar LocalStorage" class='btn btn-warning'>
-            </div>
-        </div>
+        <br>
+    
     </div>
 
-</body>
+    <div id="form" class="centrar">
+        <form id="myForm">
+            <button class="cerrar">x</button><br>
+            Modelo:<input type="text" class="txt" id="txtModel"><br>
+            Marca:<input type="text" class="txt" id="txtMarca"><br>
+            Precio:<input type="number" id="numPrecio"><br>
+            Tipo:<select id="tipo" onchange="segundoParcial.Mostrar()"><br>
+                <option value="auto">Auto</option>
+                <option value="camioneta">Camioneta</option>
+                </select><br>
 
+            <div id="autoDiv">
+            Cantidad de puertas:<input type="number" id="cantPuertas" class="col-2"><br>
+        </div>
+        <div id="camionetaDiv">
+            Es cuatro por cuatro?:<select id="cuatroX"><br>
+                <option value="true">Si</option>
+                <option value="false">No</option>
+                </select><br>
+        </div>
+            
+            <input type="button" value="Agregar" class="btn" id="btnA" onclick="segundoParcial.Sumar()">            
+            
+        </form>        
+
+    </div>
+
+    <table id="tabla" class="table"></table>
+    
+   
+    </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-
-        <div class="row justify-content-center divRow my-4">
-            <label class="col-3" for="txtNombre">Nombre:</label>
-            <input class="col-3" type="text" id="txtNombre">
-        </div>
-
-
-        <div class="row justify-content-center divRow my-4">
-            <label class="col-3" for="txtApellido">Apellido:</label>
-            <input class="col-3" type="text" id="txtApellido">
-        </div>
-
-
-        <div class="row justify-content-center divRow my-4">
-            <label class="col-3">Tipo:</label>
-            <select class="col-3" id="cmbTipo">
-                    <option value="Alumno">Alumno</option>
-                    <option value="Profesor">Profesor</option>
-                </select>
-        </div>
-
-
-        <div class="row justify-content-center divRow my-4">
-            <label class="col-3" for="txtLegajo">Legajo:</label>
-            <input class="col-3" type="text" id="txtLegajo">
-        </div>
-
-        <div class="row justify-content-around divRow my-4">
-            <div class="input-group col-3">
-                <input type="checkbox" class="mr-3" name="filtro" value="Nombre">
-                <label>Nombre</label>
-            </div>
-            <div class="input-group col-3">
-                <input type="checkbox" class="mr-3" name="filtro" value="Apellido">
-                <label>Apellido</label>
-            </div>
-            <div class="input-group col-3">
-                <input type="checkbox" class="mr-3" name="filtro" value="Legajo">
-                <label>Legajo</label>
-            </div>
-
-
-
-        </div>
-
-        <div class="row justify-content-around divRow my-4">
-            <div class="input-group col-3">
-                <div>
-                    <label class="input-group-text">Filtrar:</label>
-                </div>
-
-                <select class="custom-select" id="cmbFiltro">
-                    <option value="Todos">Todos</option>
-                    <option value="Alumnos">Alumnos</option>
-                    <option value="Profesores">Profesores</option>                        
-                </select>
-            </div>
-
-            <input class="btn btn-light" type="button" value="Limpiar" id="btnLimpiar">
-
-            <input class="btn btn-warning" type="button" value="Modificar" id="btnModificar">
-
-            <input class="btn btn-success" type="button" value="Agregar" id="btnAgregar">
-
-        </div>
-
-
-        <table class='table table-striped table-hover text-center' id="tabla">
-
-        </table>
-
-    </div>
-
-
-</body>
-
-</html> -->
